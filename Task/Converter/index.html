@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Converter</title>
+    <style>
+        /* General styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        /* Form styling */
+        form {
+            width: 80%;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        fieldset {
+            border: none;
+            margin-bottom: 2em;
+        }
+        legend {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+        label {
+            display: block;
+            margin-bottom: 1em;
+        }
+        input[type="number"] {
+            display: block;
+            width: 100%;
+            padding: 0.5em;
+            border: none;
+            border-radius: 3px;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+            font-size: 1em;
+            margin-bottom: 1em;
+        }
+        select {
+            padding: 0.5em;
+            border: none;
+            border-radius: 3px;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+            font-size: 1em;
+            margin-bottom: 1em;
+        }
+        button[type="submit"] {
+            display: block;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 0.5em 1em;
+            cursor: pointer;
+        }
+        /* Result styling */
+        .result {
+            width: 80%;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 1em;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+    </style>
+</head>
+<body background="C:\Users\Suraj\Downloads\task 3">
+    
+    <form>
+        <fieldset>
+            <legend>Temperature Converter</legend>
+            <label for="temperature">Temperature:</label>
+            <input type="number" id="temperature" name="temperature" required>
+            <label for="unit">Unit:</label>
+            <select id="unit" name="unit">
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Celsius">Celsius</option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
+        </fieldset>
+        <button type="submit">Convert</button>
+    </form>
+    <div class="result">
+        <h2>Result</h2>
+        <p id="converted"></p>
+    </div>
+    <script>
+        const form
